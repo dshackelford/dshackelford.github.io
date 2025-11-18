@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Drone Piloting – Dylan Shackelford</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav-bar">
+        <div class="nav-brand">Dylan Shackelford</div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="mechanical.html">Mechanical Design</a>
+          <a href="software.html">Software</a>
+          <a href="drone.html">Drone Piloting</a>
+          <a href="https://github.com/dshackelford" target="_blank"
+            >GitHub</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1 class="hero-title">Drone Piloting & Operations</h1>
+        <p class="hero-subtitle">
+          I’ve spent years planning and executing mapping, inspection, and test
+          flights, both as a Part 107 Remote Pilot and as the engineer behind
+          the mission-planning tools.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">FAA Part 107 Remote Pilot</span>
+          <span class="tag">Mission Planning</span>
+          <span class="tag">BVLOS-adjacent workflows</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Experience</h2>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Operational Context</h3>
+            <small>Map Pilot Pro & Commercial Operations</small>
+            <ul>
+              <li>
+                Map Pilot Pro users log hundreds of flights per day across all
+                continents.
+              </li>
+              <li>
+                I design missions, test them in the field, and feed findings
+                back into the software.
+              </li>
+              <li>
+                Experience with multiple airframes and payloads across DJI and
+                other ecosystems.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Repeat Station Image Flights</h3>
+            <small>Change Aerial</small>
+            <ul>
+              <li>
+                Built and tested workflows for revisiting the same ground
+                locations over time.
+              </li>
+              <li>
+                Focused on safe routing around utility structures and line
+                clearances.
+              </li>
+              <li>
+                Provided data repeatability for time-series analysis and AI
+                training.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Hardware Validation Flights</h3>
+            <small>Drones Made Easy</small>
+            <ul>
+              <li>
+                Tested new camera mounts and mapping rigs in operational
+                conditions.
+              </li>
+              <li>
+                Evaluated vibration, stability, and cabling in various
+                environments.
+              </li>
+              <li>
+                Iterated on designs based on flight logs and imagery quality.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Flight Images & Missions</h2>
+        <p class="section-subtitle">
+          Add photos from missions here – airframes, sites, and sample
+          orthos/imagery.
+        </p>
+
+        <div class="image-grid">
+          <div class="image-card">
+            <img
+              src="images/flight-site-01.jpg"
+              alt="Utility site drone mission"
+            />
+            <p>Utility site RSI mission with obstacle-aware routing.</p>
+          </div>
+          <div class="image-card">
+            <img
+              src="images/orthomosaic-01.jpg"
+              alt="Example orthomosaic map"
+            />
+            <p>Example orthomosaic generated from Map Pilot Pro flights.</p>
+          </div>
+          <div class="image-card">
+            <img
+              src="images/hardware-test-01.jpg"
+              alt="Drone rig with custom mounts"
+            />
+            <p>Hardware validation flight for camera and mount configuration.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Credentials</h2>
+        <div class="card">
+          <ul>
+            <li>FAA Part 107 Remote Pilot.</li>
+            <li>
+              B.S. Mechanical Engineering, University of California, Santa
+              Barbara.
+            </li>
+            <li>
+              Combined background in mechanical, software, and operations for
+              end-to-end workflows.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        &copy; <span id="year"></span> Dylan Shackelford – Drone Operations
+      </div>
+      <script>
+        document.getElementById("year").textContent =
+          new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>

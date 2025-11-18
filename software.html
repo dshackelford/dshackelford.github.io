@@ -2,23 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Software Engineering – Dylan Shackelford</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+    <title>Software Engineering – Shackelford Consulting LLC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <div class="container nav-bar">
-        <div class="nav-brand">Dylan Shackelford</div>
+        <div class="nav-brand">
+          <span class="brand-top">Shackelford Consulting LLC</span>
+          <span class="brand-subtitle">Dylan Shackelford</span>
+        </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
           <a href="mechanical.html">Mechanical Design</a>
           <a href="software.html">Software</a>
           <a href="drone.html">Drone Piloting</a>
-          <a href="https://github.com/dshackelford" target="_blank"
+          <a href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <a href="https://github.com/dshackelford" target="_blank" rel="noopener"
             >GitHub</a
           >
         </nav>
@@ -26,159 +27,143 @@
     </header>
 
     <main class="container">
-      <section class="hero">
-        <h1 class="hero-title">Software & Systems</h1>
-        <p class="hero-subtitle">
-          I build mission-planning tools, data pipelines, and flight-critical
-          mobile apps for commercial drone operations, from image capture to AI
-          training datasets.
-        </p>
-        <div class="hero-tags">
-          <span class="tag">Swift / Objective-C</span>
-          <span class="tag">Kotlin / Java</span>
-          <span class="tag">Python</span>
-          <span class="tag">SQL / SQLite</span>
+      <section class="hero hero-split">
+        <div class="hero-content">
+          <p class="eyebrow">Mission planning · Mobile apps · Data pipelines</p>
+          <h1 class="hero-title">Mission software for real-world drone work</h1>
+          <p class="hero-subtitle">
+            I build the apps and services that capture, label, and move aerial data. Map Pilot Pro
+            ships with code I maintain across iOS and Android, while custom utilities handle RSI
+            routing, KMZ exporting, and AI-ready pipelines.
+          </p>
+          <div class="hero-tags">
+            <span class="tag">Swift / Objective-C</span>
+            <span class="tag">Kotlin / Java</span>
+            <span class="tag">Python</span>
+            <span class="tag">GIS Tooling</span>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <span class="stat-label">Core Products</span>
+              <span class="stat-value">Map Pilot Pro · RSI toolkit</span>
+            </div>
+            <div>
+              <span class="stat-label">Back end</span>
+              <span class="stat-value">AWS S3 · REST APIs · SQLite</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-photo">
+            <img src="images/portfolio/terrain-aware.jpg" alt="Terrain aware mission" />
+            <p class="hero-photo-caption">Terrain-aware planning keeps AGL constant.</p>
+          </div>
+          <div class="hero-photo secondary">
+            <img src="images/portfolio/mission-simulator.jpg" alt="Mission simulator" />
+            <p class="hero-photo-caption">Simulator views used to debug SDK behavior.</p>
+          </div>
         </div>
       </section>
 
       <section>
         <h2 class="section-title">Recent Roles</h2>
-
         <div class="card-grid">
           <div class="card">
-            <h3>Drone Lead (Python)</h3>
-            <small>Change Aerial – 2025–Present · San Diego, CA</small>
+            <h3>Drone Lead – Change Aerial</h3>
+            <small>Python, GIS, Web</small>
             <ul>
-              <li>
-                Developed Repeat Station Image (RSI) planning tools based on
-                previously flown data.
-              </li>
-              <li>
-                Built route-optimization algorithms to avoid utility structures
-                while revisiting sites.
-              </li>
-              <li>
-                Implemented a KMZ-based “Flight Exporter” for DJI drones.
-              </li>
-              <li>
-                Helped integrate image registration pre-processing for AI model
-                training.
-              </li>
+              <li>Repeat Station Image (RSI) planning using historical flights + KMZ assets.</li>
+              <li>Route optimizers that respect utility clearance envelopes.</li>
+              <li>Image registration services that feed AI model training.</li>
             </ul>
           </div>
-
           <div class="card">
-            <h3>Android / iOS Lead Software Engineer</h3>
-            <small>Drones Made Easy – 2017–Present · San Diego, CA</small>
+            <h3>Android &amp; iOS Lead – Drones Made Easy</h3>
+            <small>Swift, Kotlin, C++</small>
             <ul>
-              <li>
-                Lead developer of Map Pilot Pro on both Android and iOS, used
-                globally for mapping.
-              </li>
-              <li>
-                Implemented terrain-aware flight planning to maintain constant
-                AGL altitude.
-              </li>
-              <li>
-                Built on-device “Quick Map Stitching” to review coverage right
-                after landing.
-              </li>
-              <li>
-                Managed user login, subscriptions, and cross-device data sync
-                via REST APIs and AWS S3.
-              </li>
-              <li>
-                Supported multiple drone SDKs (DJI, Autel, Parrot) for wider
-                compatibility.
-              </li>
+              <li>Mission planning, terrain clipping, and live telemetry overlays.</li>
+              <li>On-device preview stitching for rapid QA after landing.</li>
+              <li>Subscription, login, and storage flows backed by REST APIs.</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Platform Highlights</h2>
+        <p class="section-subtitle">Screens and workflows currently in production.</p>
+        <div class="image-grid">
+          <div class="image-card">
+            <img src="images/portfolio/terrain-aware.jpg" alt="Terrain aware" />
+            <p>Terrain-aware path that hugs the DEM while holding AGL.</p>
+          </div>
+          <div class="image-card">
+            <img src="images/portfolio/north-park-flight.jpg" alt="North Park flight" />
+            <p>RSI plan overlaying legacy imagery for target re-acquisition.</p>
+          </div>
+          <div class="image-card">
+            <img src="images/portfolio/dem-pipeline.jpg" alt="DEM pipeline" />
+            <p>Digital elevation model pipeline feeding mission generation.</p>
+          </div>
+          <div class="image-card">
+            <img src="images/portfolio/mission-simulator.jpg" alt="Mission simulator" />
+            <p>Mission simulator matching SDK calls before wheels up.</p>
           </div>
         </div>
       </section>
 
       <section>
         <h2 class="section-title">Tech Stack</h2>
-
-        <div class="card">
-          <h3>Languages & Platforms</h3>
-          <div class="skill-list">
-            <span class="skill-pill">Swift / Objective-C</span>
-            <span class="skill-pill">Kotlin / Java</span>
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">PHP</span>
-            <span class="skill-pill">SQL / SQLite</span>
-            <span class="skill-pill">Arduino</span>
-            <span class="skill-pill">Raspberry Pi</span>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Languages &amp; Platforms</h3>
+            <div class="skill-list">
+              <span class="skill-pill">Swift / Objective-C</span>
+              <span class="skill-pill">Kotlin / Java</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">C++ (SDK Bridges)</span>
+              <span class="skill-pill">PHP</span>
+              <span class="skill-pill">SQL / SQLite</span>
+              <span class="skill-pill">Arduino / Raspberry Pi</span>
+            </div>
           </div>
-        </div>
-
-        <div style="height: 0.75rem"></div>
-
-        <div class="card">
-          <h3>Tools & Practices</h3>
-          <div class="skill-list">
-            <span class="skill-pill">AWS S3</span>
-            <span class="skill-pill">JSON REST APIs</span>
-            <span class="skill-pill">Git / SVN</span>
-            <span class="skill-pill">SourceTree / Gitea</span>
-            <span class="skill-pill">Unit Testing / TDD</span>
-            <span class="skill-pill">CI-friendly architectures</span>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">Screens & Code Snippets</h2>
-        <p class="section-subtitle">
-          Use these cards for screenshots of your apps and short code excerpts.
-        </p>
-
-        <div class="image-grid">
-          <div class="image-card">
-            <img
-              src="images/map-pilot-mission.jpg"
-              alt="Map Pilot Pro mission planning screen"
-            />
-            <p>Terrain-aware mapping mission in Map Pilot Pro.</p>
-          </div>
-          <div class="image-card">
-            <img
-              src="images/flight-exporter.jpg"
-              alt="Flight exporter tool screenshot"
-            />
-            <p>Flight export workflow from KMZ to downstream tools.</p>
-          </div>
-          <div class="image-card">
-            <img
-              src="images/image-registration.jpg"
-              alt="Image registration pre-processing UI"
-            />
-            <p>Image registration pre-processing for AI training datasets.</p>
+          <div class="card">
+            <h3>Practices</h3>
+            <div class="skill-list">
+              <span class="skill-pill">AWS S3</span>
+              <span class="skill-pill">JSON REST APIs</span>
+              <span class="skill-pill">SDK Integrations (DJI, Autel, Parrot)</span>
+              <span class="skill-pill">Unit &amp; Flight Testing</span>
+              <span class="skill-pill">Telemetry Logging</span>
+              <span class="skill-pill">CI-Friendly Architectures</span>
+            </div>
           </div>
         </div>
       </section>
 
       <section>
-        <h2 class="section-title">Links</h2>
-        <div class="card">
-          <p class="muted">
-            GitHub:
-            <a href="https://github.com/dshackelford" target="_blank"
-              >github.com/dshackelford</a
-            >
+        <div class="card callout">
+          <h3>Looking for a mission software partner?</h3>
+          <p>
+            I can extend existing applications, build custom utilities, or help architect the data
+            layer for a new program. Send SDK details and target drones to get started.
           </p>
-          <!-- Add project-specific repo links here -->
+          <div class="cta-group">
+            <a class="btn primary" href="mailto:djshackx@gmail.com">Email Dylan</a>
+            <a class="btn ghost" href="https://github.com/dshackelford" target="_blank" rel="noopener"
+              >View GitHub</a
+            >
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
       <div class="container">
-        &copy; <span id="year"></span> Dylan Shackelford – Software Engineering
+        &copy; <span id="year"></span> Shackelford Consulting LLC – Software
       </div>
       <script>
-        document.getElementById("year").textContent =
-          new Date().getFullYear();
+        document.getElementById("year").textContent = new Date().getFullYear();
       </script>
     </footer>
   </body>

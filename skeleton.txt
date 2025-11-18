@@ -4,7 +4,7 @@ Mechanical
 	Manufacturing and packaging 		
 	M200-MSZ Agronaut bracket - rotating collar and hinged profile
 	Calibration Jig for accurate assembly at scale
-Software
+
 	Map Pilot iOS and Android. Built, maintain, respond to user feedback, fix crashes, keep up to date with SDKs. Supports DJISDK and Autel platforms.
 	Virtual flights where MapPilot pilots the drone virtually rather then relying on waypoints. 
 	Terrain Aware

@@ -58,6 +58,12 @@ header {
   gap: 0.15rem;
 }
 
+.nav-brand a:link,
+.nav-brand a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 .brand-top {
   font-weight: 700;
   letter-spacing: 0.06em;

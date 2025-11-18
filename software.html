@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Software Engineering – Dylan Shackelford</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav-bar">
+        <div class="nav-brand">Dylan Shackelford</div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="mechanical.html">Mechanical Design</a>
+          <a href="software.html">Software</a>
+          <a href="drone.html">Drone Piloting</a>
+          <a href="https://github.com/dshackelford" target="_blank"
+            >GitHub</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1 class="hero-title">Software & Systems</h1>
+        <p class="hero-subtitle">
+          I build mission-planning tools, data pipelines, and flight-critical
+          mobile apps for commercial drone operations, from image capture to AI
+          training datasets.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Swift / Objective-C</span>
+          <span class="tag">Kotlin / Java</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQL / SQLite</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Recent Roles</h2>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Drone Lead (Python)</h3>
+            <small>Change Aerial – 2025–Present · San Diego, CA</small>
+            <ul>
+              <li>
+                Developed Repeat Station Image (RSI) planning tools based on
+                previously flown data.
+              </li>
+              <li>
+                Built route-optimization algorithms to avoid utility structures
+                while revisiting sites.
+              </li>
+              <li>
+                Implemented a KMZ-based “Flight Exporter” for DJI drones.
+              </li>
+              <li>
+                Helped integrate image registration pre-processing for AI model
+                training.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Android / iOS Lead Software Engineer</h3>
+            <small>Drones Made Easy – 2017–Present · San Diego, CA</small>
+            <ul>
+              <li>
+                Lead developer of Map Pilot Pro on both Android and iOS, used
+                globally for mapping.
+              </li>
+              <li>
+                Implemented terrain-aware flight planning to maintain constant
+                AGL altitude.
+              </li>
+              <li>
+                Built on-device “Quick Map Stitching” to review coverage right
+                after landing.
+              </li>
+              <li>
+                Managed user login, subscriptions, and cross-device data sync
+                via REST APIs and AWS S3.
+              </li>
+              <li>
+                Supported multiple drone SDKs (DJI, Autel, Parrot) for wider
+                compatibility.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Tech Stack</h2>
+
+        <div class="card">
+          <h3>Languages & Platforms</h3>
+          <div class="skill-list">
+            <span class="skill-pill">Swift / Objective-C</span>
+            <span class="skill-pill">Kotlin / Java</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">PHP</span>
+            <span class="skill-pill">SQL / SQLite</span>
+            <span class="skill-pill">Arduino</span>
+            <span class="skill-pill">Raspberry Pi</span>
+          </div>
+        </div>
+
+        <div style="height: 0.75rem"></div>
+
+        <div class="card">
+          <h3>Tools & Practices</h3>
+          <div class="skill-list">
+            <span class="skill-pill">AWS S3</span>
+            <span class="skill-pill">JSON REST APIs</span>
+            <span class="skill-pill">Git / SVN</span>
+            <span class="skill-pill">SourceTree / Gitea</span>
+            <span class="skill-pill">Unit Testing / TDD</span>
+            <span class="skill-pill">CI-friendly architectures</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Screens & Code Snippets</h2>
+        <p class="section-subtitle">
+          Use these cards for screenshots of your apps and short code excerpts.
+        </p>
+
+        <div class="image-grid">
+          <div class="image-card">
+            <img
+              src="images/map-pilot-mission.jpg"
+              alt="Map Pilot Pro mission planning screen"
+            />
+            <p>Terrain-aware mapping mission in Map Pilot Pro.</p>
+          </div>
+          <div class="image-card">
+            <img
+              src="images/flight-exporter.jpg"
+              alt="Flight exporter tool screenshot"
+            />
+            <p>Flight export workflow from KMZ to downstream tools.</p>
+          </div>
+          <div class="image-card">
+            <img
+              src="images/image-registration.jpg"
+              alt="Image registration pre-processing UI"
+            />
+            <p>Image registration pre-processing for AI training datasets.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Links</h2>
+        <div class="card">
+          <p class="muted">
+            GitHub:
+            <a href="https://github.com/dshackelford" target="_blank"
+              >github.com/dshackelford</a
+            >
+          </p>
+          <!-- Add project-specific repo links here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        &copy; <span id="year"></span> Dylan Shackelford – Software Engineering
+      </div>
+      <script>
+        document.getElementById("year").textContent =
+          new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+/* Base reset-ish */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #111827;
+  background: #f3f4f6;
+}
+
+/* Layout */
+
+header {
+  background: #0f172a;
+  color: #f9fafb;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-brand {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* Hero / headings */
+
+.hero {
+  padding: 3rem 0 2rem;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  margin-bottom: 0.25rem;
+}
+
+.hero-subtitle {
+  color: #4b5563;
+  font-size: 1rem;
+  max-width: 34rem;
+}
+
+.hero-tags {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Contact strip */
+
+.contact-strip {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-strip a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-strip a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+
+section {
+  padding: 1.5rem 0;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 1.25rem;
+}
+
+/* Cards and grids */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+}
+
+.card small {
+  display: block;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.card ul {
+  padding-left: 1.1rem;
+  margin: 0.4rem 0 0;
+  font-size: 0.9rem;
+}
+
+/* Image layouts */
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.image-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.image-card img {
+  width: 100%;
+  display: block;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.image-card p {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+/* Lists */
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-pill {
+  border-radius: 999px;
+  background: #e5e7eb;
+  padding: 0.18rem 0.6rem;
+  font-size: 0.78rem;
+}
+
+/* Footer */
+
+footer {
+  padding: 1.25rem 0 1.75rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* Utilities */
+
+.muted {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    padding-top: 2.25rem;
+  }
+}

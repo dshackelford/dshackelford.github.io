@@ -11,14 +11,12 @@
       <div class="container nav-bar">
         <div class="nav-brand">
           <span class="brand-top">Dylan Shackelford</span>
-          <span class="brand-subtitle">Mechanical · Software · Flight Ops</span>
         </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
-          <a href="mechanical.html">Mechanical</a>
           <a href="software.html">Software</a>
-          <a href="armadillo.html">Armadillo</a>
-          <a href="drone.html">Flight Ops</a>
+          <a href="mechanical.html">Mechanical</a>
+          <a href="drone.html">Part 107 Pilot</a>
           <a href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
           <a href="https://github.com/dshackelford" target="_blank" rel="noopener"
             >GitHub</a
@@ -30,18 +28,15 @@
     <main class="container">
       <section class="hero hero-split">
         <div class="hero-content">
-          <p class="eyebrow">Mission planning · SDK maintenance · Data pipelines</p>
-          <h1 class="hero-title">Software that keeps commercial drones productive.</h1>
+          <h1 class="hero-title">Software</h1>
           <p class="hero-subtitle">
-            I build and maintain Map Pilot on iOS and Android, keep up with DJI and Autel SDKs, and
-            script Change Aerial’s flight planners in Python. Users rely on this software daily, so
-            I respond to feedback, fix crashes, and test every feature in the field.
+            I developed and maintained Map Pilot for iOS and Android, implementing new capabilities and ensuring ongoing compatibility with DJI and Autel flight SDKs. I also scripted and extended Change Aerial’s mission-planning tools in Python. Because these applications were used daily in production flight operations, I emphasized stability, rapid issue resolution, and comprehensive field testing to validate real-world performance.”
           </p>
           <div class="hero-tags">
-            <span class="tag">Map Pilot</span>
             <span class="tag">Swift / Kotlin</span>
             <span class="tag">Python</span>
-            <span class="tag">GIS</span>
+            <span class="tag">iOS / Android</span>
+            <span class="tag">Firebase</span>
           </div>
         </div>
         <div class="hero-media">
@@ -53,54 +48,56 @@
       </section>
 
       <section>
-        <h2 class="section-title">Map Pilot – iOS &amp; Android</h2>
+        <h2 class="section-title">Change Aerial</h2>
         <p class="section-subtitle">
-          Lead developer for Map Pilot, the commercial mapping app explained in
-          <a href="https://www.mapsmadeeasy.com/map_pilot/" target="_blank" rel="noopener"
-            >mapsmadeeasy.com/map_pilot</a
-          >.
-        </p>
+          Software engineer and Drone specialist for Change Aerial's Repeat Image inspection for utlity infrastructure.  
         <div class="card-grid">
           <div class="card">
-            <span class="project-label software">Software</span>
-            <h3>Ship, maintain, support</h3>
+            <span class="project-label software">Python</span>
+            <h3>Flight Planning</h3>
             <ul>
-              <li>Release on both iOS and Android, keeping SDKs current and stable.</li>
-              <li>Respond to user feedback, fix crashes, and triage telemetry reports.</li>
-              <li>Support DJI and Autel platforms with shared mission logic.</li>
+              <li>Scripts that ingest Repeat Station Image data and generate safe routes.</li>
+              <li>Obstacle avoidance routines for safe transit near utility infrastructure.</li>
+              <li>Exports directly into the DJI's KMZ ecosystem.</li>
             </ul>
           </div>
           <div class="card">
-            <span class="project-label software">Software</span>
-            <h3>Virtual Flights &amp; Terrain Aware</h3>
+            <span class="project-label software">AI</span>
+            <h3>Training</h3>
             <ul>
-              <li>Built “virtual flights” where Map Pilot pilots the drone in software before takeoff.</li>
-              <li>Terrain Aware mission planning that adjusts altitude against DEM/DTM data.</li>
-              <li>KMZ exports and overlays so crews see obstacles before wheels up.</li>
+              <li>Helped organize initial datasets for training.</li>
+              <li>Filtered image meta data for temporal RNN models</li>
             </ul>
           </div>
         </div>
       </section>
 
       <section>
-        <h2 class="section-title">Change Aerial Tooling</h2>
+        <h2 class="section-title">Map Pilot – iOS &amp; Android</h2>
+        <p class="section-subtitle">
+          Lead developer of Map Pilot Pro, the companion app for Maps Made Easy that ensure accurate and high quality data aggregation for photogrammetry.
+        </p>
         <div class="card-grid">
           <div class="card">
             <span class="project-label software">Software</span>
-            <h3>Python Flight Planning</h3>
+            <h3>iOS & Android</h3>
             <ul>
-              <li>Scripts that ingest Repeat Station Image data and generate safe routes.</li>
-              <li>Obstacle avoidance routines that respect energized utility envelopes.</li>
-              <li>Exports that plug directly into the Map Pilot ecosystem.</li>
+              <li>Release on both iOS and Android, keeping SDKs current and stable.</li>
+              <li>Respond to user feedback, fix crashes, and triage telemetry reports.</li>
             </ul>
           </div>
           <div class="card">
             <span class="project-label software">Software</span>
-            <h3>Toolchain</h3>
+            <h3>Terrain Aware</h3>
             <ul>
-              <li>Python, GIS libraries, AWS S3, REST APIs, and SQLite.</li>
-              <li>Diagnostic logging so I can replay missions or virtual flights quickly.</li>
-              <li>Close collaboration with mechanical and ops work to keep data aligned.</li>
+              <li>Terrain Aware mission planning that adjusts altitude against SRTM datasets.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="project-label software">Software</span>
+            <h3>Virtual Control</h3>
+            <ul>
+              <li>Built “virtual flights” where Map Pilot pilots the drone in software before takeoff.</li>
             </ul>
           </div>
         </div>

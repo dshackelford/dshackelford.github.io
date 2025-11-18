@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dylan Shackelford – Portfolio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Portfolio of Dylan Shackelford – Mechanical & Software Engineer, Drone Systems Lead, FAA Part 107 Remote Pilot."
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container nav-bar">
+        <div class="nav-brand">Dylan Shackelford</div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="mechanical.html">Mechanical Design</a>
+          <a href="software.html">Software</a>
+          <a href="drone.html">Drone Piloting</a>
+          <a href="https://github.com/dshackelford" target="_blank"
+            >GitHub</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1 class="hero-title">Mechanical & Software Engineer</h1>
+        <p class="hero-subtitle">
+          I build flight-critical systems for drones, from mission-planning
+          software to custom hardware mounts and repeatable survey workflows.
+          Based in San Diego, CA. FAA Part 107 Remote Pilot.
+        </p>
+
+        <div class="hero-tags">
+          <span class="tag">Drone Lead – Change Aerial</span>
+          <span class="tag">Android / iOS Lead – Drones Made Easy</span>
+          <span class="tag">Mechanical Engineering – UCSB</span>
+        </div>
+
+        <div class="contact-strip">
+          <span
+            >Email:
+            <a href="mailto:djshackx@gmail.com">djshackx@gmail.com</a></span
+          >
+          <span>Phone: <a href="tel:+16193798959">(619) 379-8959</a></span>
+          <span
+            >GitHub:
+            <a href="https://github.com/dshackelford" target="_blank"
+              >github.com/dshackelford</a
+            ></span
+          >
+          <span>Location: San Diego, CA</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">
+          My work lives at the intersection of mechanical design, embedded
+          systems, and mission-planning software for commercial drones.
+        </p>
+
+        <div class="card-grid">
+          <a class="card" href="mechanical.html">
+            <h3>Mechanical Design</h3>
+            <small>SolidWorks · FreeCAD · Fabrication</small>
+            <ul>
+              <li>
+                Custom camera and sensor mounts for DJI and other platforms.
+              </li>
+              <li>
+                3D-printed prototypes, machined parts, and field-tested
+                assemblies.
+              </li>
+              <li>
+                Camper canopies and sheet-metal structures using 8020 aluminum.
+              </li>
+            </ul>
+          </a>
+
+          <a class="card" href="software.html">
+            <h3>Software & Systems</h3>
+            <small>Swift / Kotlin / Python</small>
+            <ul>
+              <li>
+                Lead dev for Map Pilot Pro on iOS and Android – terrain-aware
+                mapping missions.
+              </li>
+              <li>
+                Flight exporting, image registration, and data pipelines for
+                AI/ML.
+              </li>
+              <li>
+                Cloud-backed workflows using REST APIs and AWS S3.
+              </li>
+            </ul>
+          </a>
+
+          <a class="card" href="drone.html">
+            <h3>Drone Piloting & Operations</h3>
+            <small>FAA Part 107 · Mission Planning</small>
+            <ul>
+              <li>
+                Hundreds of automated survey flights per day across a global
+                user base.
+              </li>
+              <li>
+                Repeat Station Image (RSI) planning to revisit utility sites
+                safely.
+              </li>
+              <li>
+                Field testing new hardware, mounting solutions, and workflows.
+              </li>
+            </ul>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Selected Skills</h2>
+        <div class="card">
+          <h3>Software</h3>
+          <div class="skill-list">
+            <span class="skill-pill">Swift / Objective-C</span>
+            <span class="skill-pill">Kotlin / Java</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">SQL / SQLite</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">AWS S3</span>
+            <span class="skill-pill">PHP</span>
+            <span class="skill-pill">Arduino / Raspberry Pi</span>
+            <span class="skill-pill">Git / SVN</span>
+          </div>
+        </div>
+
+        <div style="height: 0.75rem"></div>
+
+        <div class="card">
+          <h3>Mechanical & Hands-On</h3>
+          <div class="skill-list">
+            <span class="skill-pill">SolidWorks</span>
+            <span class="skill-pill">AutoCAD</span>
+            <span class="skill-pill">FreeCAD</span>
+            <span class="skill-pill">Matlab / Octave</span>
+            <span class="skill-pill">CNC / 3D printing workflows</span>
+            <span class="skill-pill">Drill press / Lathe</span>
+            <span class="skill-pill">Tap &amp; Die</span>
+            <span class="skill-pill">Soldering</span>
+            <span class="skill-pill">Composite work</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        &copy; <span id="year"></span> Dylan Shackelford. FAA Part 107 Remote
+        Pilot.
+      </div>
+      <script>
+        document.getElementById("year").textContent =
+          new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>

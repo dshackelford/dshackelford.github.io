@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Software Engineering – Shackelford Consulting LLC</title>
+    <title>Software Engineering – Dylan Shackelford</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -10,14 +10,15 @@
     <header>
       <div class="container nav-bar">
         <div class="nav-brand">
-          <span class="brand-top">Shackelford Consulting LLC</span>
-          <span class="brand-subtitle">Dylan Shackelford</span>
+          <span class="brand-top">Dylan Shackelford</span>
+          <span class="brand-subtitle">Mechanical · Software · Flight Ops</span>
         </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
-          <a href="mechanical.html">Mechanical Design</a>
+          <a href="mechanical.html">Mechanical</a>
           <a href="software.html">Software</a>
-          <a href="drone.html">Drone Piloting</a>
+          <a href="armadillo.html">Armadillo</a>
+          <a href="drone.html">Flight Ops</a>
           <a href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
           <a href="https://github.com/dshackelford" target="_blank" rel="noopener"
             >GitHub</a
@@ -29,129 +30,93 @@
     <main class="container">
       <section class="hero hero-split">
         <div class="hero-content">
-          <p class="eyebrow">Mission planning · Mobile apps · Data pipelines</p>
-          <h1 class="hero-title">Mission software for real-world drone work</h1>
+          <p class="eyebrow">Mission planning · SDK maintenance · Data pipelines</p>
+          <h1 class="hero-title">Software that keeps commercial drones productive.</h1>
           <p class="hero-subtitle">
-            I build the apps and services that capture, label, and move aerial data. Map Pilot Pro
-            ships with code I maintain across iOS and Android, while custom utilities handle RSI
-            routing, KMZ exporting, and AI-ready pipelines.
+            I build and maintain Map Pilot on iOS and Android, keep up with DJI and Autel SDKs, and
+            script Change Aerial’s flight planners in Python. Users rely on this software daily, so
+            I respond to feedback, fix crashes, and test every feature in the field.
           </p>
           <div class="hero-tags">
-            <span class="tag">Swift / Objective-C</span>
-            <span class="tag">Kotlin / Java</span>
+            <span class="tag">Map Pilot</span>
+            <span class="tag">Swift / Kotlin</span>
             <span class="tag">Python</span>
-            <span class="tag">GIS Tooling</span>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <span class="stat-label">Core Products</span>
-              <span class="stat-value">Map Pilot Pro · RSI toolkit</span>
-            </div>
-            <div>
-              <span class="stat-label">Back end</span>
-              <span class="stat-value">AWS S3 · REST APIs · SQLite</span>
-            </div>
+            <span class="tag">GIS</span>
           </div>
         </div>
         <div class="hero-media">
           <div class="hero-photo">
-            <img src="images/portfolio/terrain-aware.jpg" alt="Terrain aware mission" />
-            <p class="hero-photo-caption">Terrain-aware planning keeps AGL constant.</p>
-          </div>
-          <div class="hero-photo secondary">
-            <img src="images/portfolio/mission-simulator.jpg" alt="Mission simulator" />
-            <p class="hero-photo-caption">Simulator views used to debug SDK behavior.</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">Recent Roles</h2>
-        <div class="card-grid">
-          <div class="card">
-            <h3>Drone Lead – Change Aerial</h3>
-            <small>Python, GIS, Web</small>
-            <ul>
-              <li>Repeat Station Image (RSI) planning using historical flights + KMZ assets.</li>
-              <li>Route optimizers that respect utility clearance envelopes.</li>
-              <li>Image registration services that feed AI model training.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Android &amp; iOS Lead – Drones Made Easy</h3>
-            <small>Swift, Kotlin, C++</small>
-            <ul>
-              <li>Mission planning, terrain clipping, and live telemetry overlays.</li>
-              <li>On-device preview stitching for rapid QA after landing.</li>
-              <li>Subscription, login, and storage flows backed by REST APIs.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">Platform Highlights</h2>
-        <p class="section-subtitle">Screens and workflows currently in production.</p>
-        <div class="image-grid">
-          <div class="image-card">
             <img src="images/portfolio/terrain-aware.jpg" alt="Terrain aware" />
-            <p>Terrain-aware path that hugs the DEM while holding AGL.</p>
-          </div>
-          <div class="image-card">
-            <img src="images/portfolio/north-park-flight.jpg" alt="North Park flight" />
-            <p>RSI plan overlaying legacy imagery for target re-acquisition.</p>
-          </div>
-          <div class="image-card">
-            <img src="images/portfolio/dem-pipeline.jpg" alt="DEM pipeline" />
-            <p>Digital elevation model pipeline feeding mission generation.</p>
-          </div>
-          <div class="image-card">
-            <img src="images/portfolio/mission-simulator.jpg" alt="Mission simulator" />
-            <p>Mission simulator matching SDK calls before wheels up.</p>
+            <p class="hero-photo-caption">Terrain-aware missions shown in Map Pilot.</p>
           </div>
         </div>
       </section>
 
       <section>
-        <h2 class="section-title">Tech Stack</h2>
+        <h2 class="section-title">Map Pilot – iOS &amp; Android</h2>
+        <p class="section-subtitle">
+          Lead developer for Map Pilot, the commercial mapping app explained in
+          <a href="https://www.mapsmadeeasy.com/map_pilot/" target="_blank" rel="noopener"
+            >mapsmadeeasy.com/map_pilot</a
+          >.
+        </p>
         <div class="card-grid">
           <div class="card">
-            <h3>Languages &amp; Platforms</h3>
-            <div class="skill-list">
-              <span class="skill-pill">Swift / Objective-C</span>
-              <span class="skill-pill">Kotlin / Java</span>
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">C++ (SDK Bridges)</span>
-              <span class="skill-pill">PHP</span>
-              <span class="skill-pill">SQL / SQLite</span>
-              <span class="skill-pill">Arduino / Raspberry Pi</span>
-            </div>
+            <span class="project-label software">Software</span>
+            <h3>Ship, maintain, support</h3>
+            <ul>
+              <li>Release on both iOS and Android, keeping SDKs current and stable.</li>
+              <li>Respond to user feedback, fix crashes, and triage telemetry reports.</li>
+              <li>Support DJI and Autel platforms with shared mission logic.</li>
+            </ul>
           </div>
           <div class="card">
-            <h3>Practices</h3>
-            <div class="skill-list">
-              <span class="skill-pill">AWS S3</span>
-              <span class="skill-pill">JSON REST APIs</span>
-              <span class="skill-pill">SDK Integrations (DJI, Autel, Parrot)</span>
-              <span class="skill-pill">Unit &amp; Flight Testing</span>
-              <span class="skill-pill">Telemetry Logging</span>
-              <span class="skill-pill">CI-Friendly Architectures</span>
-            </div>
+            <span class="project-label software">Software</span>
+            <h3>Virtual Flights &amp; Terrain Aware</h3>
+            <ul>
+              <li>Built “virtual flights” where Map Pilot pilots the drone in software before takeoff.</li>
+              <li>Terrain Aware mission planning that adjusts altitude against DEM/DTM data.</li>
+              <li>KMZ exports and overlays so crews see obstacles before wheels up.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Change Aerial Tooling</h2>
+        <div class="card-grid">
+          <div class="card">
+            <span class="project-label software">Software</span>
+            <h3>Python Flight Planning</h3>
+            <ul>
+              <li>Scripts that ingest Repeat Station Image data and generate safe routes.</li>
+              <li>Obstacle avoidance routines that respect energized utility envelopes.</li>
+              <li>Exports that plug directly into the Map Pilot ecosystem.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="project-label software">Software</span>
+            <h3>Toolchain</h3>
+            <ul>
+              <li>Python, GIS libraries, AWS S3, REST APIs, and SQLite.</li>
+              <li>Diagnostic logging so I can replay missions or virtual flights quickly.</li>
+              <li>Close collaboration with mechanical and ops work to keep data aligned.</li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section>
         <div class="card callout">
-          <h3>Looking for a mission software partner?</h3>
+          <h3>Need help with mission software?</h3>
           <p>
-            I can extend existing applications, build custom utilities, or help architect the data
-            layer for a new program. Send SDK details and target drones to get started.
+            I can extend Map Pilot, build custom utilities, or create Python tooling that feeds your
+            mission planners. Send me the airframes, SDKs, and datasets you need to support.
           </p>
           <div class="cta-group">
             <a class="btn primary" href="mailto:djshackx@gmail.com">Email Dylan</a>
             <a class="btn ghost" href="https://github.com/dshackelford" target="_blank" rel="noopener"
-              >View GitHub</a
+              >GitHub</a
             >
           </div>
         </div>
@@ -160,7 +125,7 @@
 
     <footer>
       <div class="container">
-        &copy; <span id="year"></span> Shackelford Consulting LLC – Software
+        &copy; <span id="year"></span> Dylan Shackelford · Shackelford Consulting LLC
       </div>
       <script>
         document.getElementById("year").textContent = new Date().getFullYear();

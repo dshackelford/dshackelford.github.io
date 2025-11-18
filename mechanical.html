@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Mechanical Design – Shackelford Consulting LLC</title>
+    <title>Mechanical Design – Dylan Shackelford</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -10,14 +10,15 @@
     <header>
       <div class="container nav-bar">
         <div class="nav-brand">
-          <span class="brand-top">Shackelford Consulting LLC</span>
-          <span class="brand-subtitle">Dylan Shackelford</span>
+          <span class="brand-top">Dylan Shackelford</span>
+          <span class="brand-subtitle">Mechanical · Software · Flight Ops</span>
         </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
-          <a href="mechanical.html">Mechanical Design</a>
+          <a href="mechanical.html">Mechanical</a>
           <a href="software.html">Software</a>
-          <a href="drone.html">Drone Piloting</a>
+          <a href="armadillo.html">Armadillo</a>
+          <a href="drone.html">Flight Ops</a>
           <a href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
           <a href="https://github.com/dshackelford" target="_blank" rel="noopener"
             >GitHub</a
@@ -29,38 +30,24 @@
     <main class="container">
       <section class="hero hero-split">
         <div class="hero-content">
-          <p class="eyebrow">Payload integration · Fabrication · Field validation</p>
-          <h1 class="hero-title">Mechanical design that is ready for takeoff</h1>
+          <p class="eyebrow">Payload integration · Fixtures · Manufacturing support</p>
+          <h1 class="hero-title">Mechanical systems that are built to be flown and replicated.</h1>
           <p class="hero-subtitle">
-            From CAD to installation, I design hardware that can be manufactured quickly and
-            serviced in the field. My builds pair precision fixtures, ruggedized electronics, and
-            detailed documentation so drone crews can keep flying.
+            I design housings, jigs, and brackets that keep drone payloads aligned, safe, and easy to
+            manufacture. CAD is only the start—most of these projects moved through machining,
+            composite work, packaging, and flight validation.
           </p>
           <div class="hero-tags">
             <span class="tag">SolidWorks / FreeCAD</span>
             <span class="tag">Sheet Metal &amp; 8020</span>
-            <span class="tag">3D Printing</span>
-            <span class="tag">Shop Tools</span>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <span class="stat-label">Services</span>
-              <span class="stat-value">Payload mounts, fixtures, hardware retrofits</span>
-            </div>
-            <div>
-              <span class="stat-label">Deliverables</span>
-              <span class="stat-value">CAD, BOMs, fabrication drawings, install guides</span>
-            </div>
+            <span class="tag">CNC &amp; 3D Printing</span>
+            <span class="tag">Assembly Jigs</span>
           </div>
         </div>
         <div class="hero-media">
           <div class="hero-photo">
             <img src="images/portfolio/cnc-jig.jpg" alt="Machined jig" />
-            <p class="hero-photo-caption">Fixture used to drill matching holes in short-run batches.</p>
-          </div>
-          <div class="hero-photo secondary">
-            <img src="images/portfolio/armadillo-frame.jpg" alt="Camper frame" />
-            <p class="hero-photo-caption">8020 canopy frame prior to composite skin install.</p>
+            <p class="hero-photo-caption">Calibration jig for repeatable drilling and tapping.</p>
           </div>
         </div>
       </section>
@@ -69,40 +56,71 @@
         <h2 class="section-title">Project Spotlights</h2>
         <div class="project-grid">
           <article class="project-case">
-            <img src="images/portfolio/m200-bracket.jpg" alt="DJI payload bracket" />
+            <span class="project-label mechanical">Mechanical</span>
+            <img src="images/portfolio/ninja-board.png" alt="Ninja computer housing" />
             <div>
-              <h3>DJI Payload &amp; Sensor Mounts</h3>
+              <h3>Ninja Computer Housing</h3>
               <small>Drones Made Easy</small>
               <ul>
-                <li>Designed brackets for Sony multispectral, custom lidar, and mapping payloads.</li>
-                <li>Balanced assemblies for CG, clearance, and cabling on DJI M200 / M300 airframes.</li>
-                <li>Produced machine-ready drawings and build notes for short-run shops.</li>
+                <li>Designed a protective enclosure for the Ninja flight computer and custom PCB stack.</li>
+                <li>Integrated cabling channels, vibration isolation, and service-friendly fasteners.</li>
+                <li>Printed and machined variants for rapid firmware iterations and field swaps.</li>
               </ul>
             </div>
           </article>
 
           <article class="project-case">
-            <img src="images/portfolio/prototype-lab.jpg" alt="Prototype bench" />
+            <span class="project-label mechanical">Mechanical</span>
+            <img src="images/portfolio/prototype-lab.jpg" alt="Phantom 4 agronaut" />
             <div>
-              <h3>Rapid Prototyping &amp; Electronics</h3>
+              <h3>Phantom 4 Agronaut Challenge</h3>
+              <small>Drones Made Easy</small>
+              <ul>
+                <li>Designed mounts that kept the separated light sensor and IMU aligned.</li>
+                <li>Routed cabling through tight gimbal clearances without impacting folding.</li>
+                <li>Provided install documentation so techs could service the system on tour.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-case">
+            <span class="project-label mechanical">Mechanical</span>
+            <img src="images/portfolio/m200-bracket.jpg" alt="M200 MSZ bracket" />
+            <div>
+              <h3>M200-MSZ Agronaut Bracket</h3>
+              <small>Drones Made Easy</small>
+              <ul>
+                <li>Created a rotating collar and hinged profile for quick camera swaps.</li>
+                <li>Balanced CG, sensor offsets, and folding clearances for travel.</li>
+                <li>Integrated vibration isolation so imagery stays sharp.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-case">
+            <span class="project-label mechanical">Mechanical</span>
+            <img src="images/portfolio/armadillo-camping.jpg" alt="Manufacturing setup" />
+            <div>
+              <h3>Manufacturing &amp; Packaging Runs</h3>
+              <small>Drones Made Easy</small>
+              <ul>
+                <li>Stood up low-volume manufacturing for payload kits, including BOMs and QA checklists.</li>
+                <li>Developed protective packaging that keeps sensors aligned through shipping.</li>
+                <li>Owned outbound logistics so customers received flight-ready assemblies.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-case">
+            <span class="project-label mechanical">Mechanical</span>
+            <img src="images/portfolio/prototype-lab.jpg" alt="Calibration jig" />
+            <div>
+              <h3>Calibration Jigs for Scale Builds</h3>
               <small>Internal Lab</small>
               <ul>
-                <li>3D printed housings, soldered harnesses, and validated PCBs for control boards.</li>
-                <li>Combined carbon fiber, machined aluminum, and printed parts for hybrid assemblies.</li>
-                <li>Documented change logs so field techs could replicate fixes.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project-case">
-            <img src="images/portfolio/armadillo-camping.jpg" alt="Armadillo camper" />
-            <div>
-              <h3>ArmAdillo Camper Canopy</h3>
-              <small>Mutable Campers</small>
-              <ul>
-                <li>Modeled modular canopy using 8020 extrusion and composite panels.</li>
-                <li>Designed hinges, latches, and mounting points for DIY installation.</li>
-                <li>Delivered assembly drawings and cut lists for local fabricators.</li>
+                <li>Fabricated alignment fixtures that keep camera boresight and lever arms consistent.</li>
+                <li>Integrated dowel pins, datum features, and adjustable stops for micron-level tweaks.</li>
+                <li>Used these jigs to train technicians and accelerate throughput.</li>
               </ul>
             </div>
           </article>
@@ -111,58 +129,33 @@
 
       <section>
         <h2 class="section-title">Gallery</h2>
-        <p class="section-subtitle">A mix of payload mounts, fixtures, and camper hardware.</p>
+        <p class="section-subtitle">Hardware, electronics, and fixtures behind these builds.</p>
         <div class="image-grid">
           <div class="image-card">
             <img src="images/portfolio/cnc-jig.jpg" alt="Machining jig" />
-            <p>Precision jig for drilling and tapping carbon-fiber plates.</p>
+            <p>Precision jig for tapping carbon-fiber plates.</p>
           </div>
           <div class="image-card">
             <img src="images/portfolio/m200-bracket.jpg" alt="DJI bracket" />
-            <p>Custom DJI M200 bracket with vibration isolation.</p>
+            <p>M200 bracket with rotating collar and hinge.</p>
           </div>
           <div class="image-card">
             <img src="images/portfolio/prototype-lab.jpg" alt="Prototype bench" />
-            <p>Electronics bench for camera control and power modules.</p>
+            <p>Electronics bench for Ninja housings and harnesses.</p>
           </div>
           <div class="image-card">
             <img src="images/portfolio/armadillo-frame.jpg" alt="Camper frame" />
-            <p>8020 frame test-fit before cladding.</p>
-          </div>
-          <div class="image-card">
-            <img src="images/portfolio/armadillo-camping.jpg" alt="Camper deployed" />
-            <p>Completed ArmAdillo canopy deployed in the field.</p>
-          </div>
-          <div class="image-card">
-            <img src="images/portfolio/ninja-board.png" alt="Electronics board" />
-            <p>Custom control board for payload trigger timing.</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">Tools &amp; Processes</h2>
-        <div class="card">
-          <div class="skill-list">
-            <span class="skill-pill">SolidWorks</span>
-            <span class="skill-pill">FreeCAD</span>
-            <span class="skill-pill">Sheet Metal Design</span>
-            <span class="skill-pill">8020 Extrusions</span>
-            <span class="skill-pill">Composite Layups</span>
-            <span class="skill-pill">CNC / 3D Printing</span>
-            <span class="skill-pill">Tap &amp; Die</span>
-            <span class="skill-pill">Technical Drawings</span>
-            <span class="skill-pill">Field Retrofits</span>
+            <p>8020 frame test-fit that informed manufacturing steps.</p>
           </div>
         </div>
       </section>
 
       <section>
         <div class="card callout">
-          <h3>Need a payload mounted or prototype fabricated?</h3>
+          <h3>Need help with payload hardware?</h3>
           <p>
-            I can join for concepting, CAD, and build supervision, or own the full delivery.
-            Let’s talk through your integrations and schedule.
+            I can support CAD only, or carry the work through prototyping, documentation, packaging,
+            and field checks. Let’s talk about the payload you need to fly.
           </p>
           <div class="cta-group">
             <a class="btn primary" href="mailto:djshackx@gmail.com">Email Dylan</a>
@@ -176,7 +169,7 @@
 
     <footer>
       <div class="container">
-        &copy; <span id="year"></span> Shackelford Consulting LLC – Mechanical Design
+        &copy; <span id="year"></span> Dylan Shackelford · Shackelford Consulting LLC
       </div>
       <script>
         document.getElementById("year").textContent = new Date().getFullYear();

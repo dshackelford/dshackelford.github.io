@@ -1,0 +1,19 @@
+Mechanical 
+	Ninja Computer Housing
+	Phantom 4 Agronaut design - design challenge of having a separated light sensor and IMU.
+	Manufacturing and packaging 		
+	M200-MSZ Agronaut bracket - rotating collar and hinged profile
+	Calibration Jig for accurate assembly at scale
+Software
+	Map Pilot iOS and Android. Built, maintain, respond to user feedback, fix crashes, keep up to date with SDKs. Supports DJISDK and Autel platforms.
+	Virtual flights where MapPilot pilots the drone virtually rather then relying on waypoints. 
+	Terrain Aware
+	https://www.mapsmadeeasy.com/map_pilot/		
+	Change Aerial Python scripting for flight planning / obstacle avoidance.
+Armadillo
+	Camper canopy for your truck bed
+Drone Pilot
+	FAA Pilot - Part 107 Recurrent
+	500+ flight time
+	
+		

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Drone Piloting – Shackelford Consulting LLC</title>
+    <title>Drone Piloting – Dylan Shackelford</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -10,14 +10,15 @@
     <header>
       <div class="container nav-bar">
         <div class="nav-brand">
-          <span class="brand-top">Shackelford Consulting LLC</span>
-          <span class="brand-subtitle">Dylan Shackelford</span>
+          <span class="brand-top">Dylan Shackelford</span>
+          <span class="brand-subtitle">Mechanical · Software · Flight Ops</span>
         </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
-          <a href="mechanical.html">Mechanical Design</a>
+          <a href="mechanical.html">Mechanical</a>
           <a href="software.html">Software</a>
-          <a href="drone.html">Drone Piloting</a>
+          <a href="armadillo.html">Armadillo</a>
+          <a href="drone.html">Flight Ops</a>
           <a href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
           <a href="https://github.com/dshackelford" target="_blank" rel="noopener"
             >GitHub</a
@@ -29,113 +30,84 @@
     <main class="container">
       <section class="hero hero-split">
         <div class="hero-content">
-          <p class="eyebrow">FAA Part 107 · Mission design · Field validation</p>
-          <h1 class="hero-title">Flight operations informed by the engineer who built the tools</h1>
+          <p class="eyebrow">FAA Part 107 Recurrent · 500+ hours · Field validation</p>
+          <h1 class="hero-title">Pilot who also designs the hardware and software.</h1>
           <p class="hero-subtitle">
-            I have logged hundreds of automated survey, inspection, and prototype flights. Being
-            both the pilot and software designer lets me troubleshoot payloads, collect proof data,
-            and feed learnings directly back into the product.
+            With more than 500 hours logged and a current FAA Part 107 remote pilot certificate, I
+            fly the missions that validate my mechanical builds and software. That feedback loop
+            keeps projects grounded in reality.
           </p>
           <div class="hero-tags">
             <span class="tag">Mission Planning</span>
             <span class="tag">RSI Workflows</span>
             <span class="tag">Hardware Validation</span>
           </div>
-          <div class="hero-stats">
-            <div>
-              <span class="stat-label">Pilot</span>
-              <span class="stat-value">FAA Part 107, insured</span>
-            </div>
-            <div>
-              <span class="stat-label">Airframes</span>
-              <span class="stat-value">DJI, Autel, custom rigs</span>
-            </div>
-          </div>
         </div>
         <div class="hero-media">
           <div class="hero-photo">
-            <img src="images/portfolio/north-park-flight.jpg" alt="RSI flight" />
-            <p class="hero-photo-caption">RSI mission verifying alignment before launch.</p>
-          </div>
-          <div class="hero-photo secondary">
-            <img src="images/portfolio/armadillo-camping.jpg" alt="Field setup" />
-            <p class="hero-photo-caption">Field-ready rigs double as mobile workstations.</p>
+            <img src="images/portfolio/north-park-flight.jpg" alt="RSI plan" />
+            <p class="hero-photo-caption">RSI plan review before revisiting energized utility sites.</p>
           </div>
         </div>
       </section>
 
       <section>
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title">Flight Experience</h2>
         <div class="card-grid">
           <div class="card">
-            <h3>Operational Context</h3>
-            <small>Map Pilot Pro Ecosystem</small>
+            <span class="project-label ops">Flight Ops</span>
+            <h3>Flight Hours &amp; Credential</h3>
             <ul>
-              <li>Design and test missions before shipping them to a global user base.</li>
-              <li>Review logs, imagery, and telemetry to tune autonomy.</li>
-              <li>Support crews on multiple payload + drone combinations.</li>
+              <li>500+ logged hours across mapping, inspection, and test flights.</li>
+              <li>FAA Part 107 Remote Pilot (recurrent) with commercial insurance.</li>
+              <li>Comfortable with BVLOS-adjacent utility workflows.</li>
             </ul>
           </div>
           <div class="card">
+            <span class="project-label ops">Flight Ops</span>
             <h3>Repeat Station Image Missions</h3>
-            <small>Change Aerial</small>
             <ul>
-              <li>Revisit the same lat/long pairs safely around energized infrastructure.</li>
-              <li>Capture time-series datasets for utilities and AI teams.</li>
-              <li>Blend field data with GIS overlays for QA.</li>
+              <li>Plan and fly RSI missions for Change Aerial using my own tooling.</li>
+              <li>Layer DEMs and historic imagery to verify targets before flight.</li>
+              <li>Collect QA data that flows back into Python scripts and Map Pilot.</li>
             </ul>
           </div>
           <div class="card">
-            <h3>Hardware Validation Flights</h3>
-            <small>Drones Made Easy</small>
+            <span class="project-label ops">Flight Ops</span>
+            <h3>Hardware &amp; Software Validation</h3>
             <ul>
-              <li>Test new payload mounts, vibration isolation, and cabling.</li>
-              <li>Document findings for mechanical and software teams.</li>
-              <li>Develop repeatable calibration workflows.</li>
+              <li>Test new payload mounts, calibration workflows, and mission software together.</li>
+              <li>Document vibration, cabling, and imagery results for each build.</li>
+              <li>Close the loop quickly because I’m the engineer and the pilot.</li>
             </ul>
           </div>
         </div>
       </section>
 
       <section>
-        <h2 class="section-title">Flight Images &amp; Missions</h2>
+        <h2 class="section-title">Flight Images</h2>
         <div class="image-grid">
           <div class="image-card">
             <img src="images/portfolio/north-park-flight.jpg" alt="Utility site" />
-            <p>Utility corridor RSI plan layered with DEM and obstacles.</p>
+            <p>RSI alignment over a utility corridor.</p>
           </div>
           <div class="image-card">
-            <img src="images/portfolio/terrain-aware.jpg" alt="Mission planning" />
-            <p>Terrain-aware mission keeping altitude constant over steep terrain.</p>
+            <img src="images/portfolio/terrain-aware.jpg" alt="Terrain aware" />
+            <p>Terrain-aware path ready for upload.</p>
           </div>
           <div class="image-card">
             <img src="images/portfolio/dem-pipeline.jpg" alt="DEM" />
-            <p>DEM-derived flight lines ready for export to DJI / KMZ.</p>
+            <p>DEM-derived flight lines that feed Map Pilot.</p>
           </div>
-          <div class="image-card">
-            <img src="images/portfolio/prototype-lab.jpg" alt="Bench testing" />
-            <p>Bench testing payload wiring before airfield deployment.</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">Credentials</h2>
-        <div class="card">
-          <ul>
-            <li>FAA Part 107 Remote Pilot.</li>
-            <li>B.S. Mechanical Engineering – University of California, Santa Barbara.</li>
-            <li>Fully insured for commercial operations; experienced with BVLOS-adjacent workflows.</li>
-          </ul>
         </div>
       </section>
 
       <section>
         <div class="card callout">
-          <h3>Need a pilot who can also debug the mission planner?</h3>
+          <h3>Need a pilot who understands the entire system?</h3>
           <p>
-            I can execute flights, support customers, or embed with your engineering team to close
-            the loop between hardware, software, and operations.
+            I can fly acceptance tests, coach crews, or embed for a full engagement that includes
+            hardware and software tweaks. Let’s line up your next flight schedule.
           </p>
           <div class="cta-group">
             <a class="btn primary" href="mailto:djshackx@gmail.com">Schedule a call</a>
@@ -147,7 +119,7 @@
 
     <footer>
       <div class="container">
-        &copy; <span id="year"></span> Shackelford Consulting LLC – Drone Operations
+        &copy; <span id="year"></span> Dylan Shackelford · Shackelford Consulting LLC
       </div>
       <script>
         document.getElementById("year").textContent = new Date().getFullYear();
